@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Col with Event</title>
+</head>
+<body>
+    <!-- <button id="button" >Click me to change background color</button> -->
+    <button id="mainButton">Login</button>
+    <script>
+        // Function of Change Background 
+        const button = document.querySelector("#button");
+        function randomNum(number){
+            const random = Math.floor(Math.random()*(number+1));
+            return random;
+        }
+        button.onclick = function(){
+            const rndCol = 'rgb(' + randomNum(255) + ',' + randomNum(255) + ',' + randomNum(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        //Event check for
+        const mainBtn = document.querySelector('#mainButton');
+        function someEvent(){
+            console.log("Login Button clicked")
+            
+        }
+        mainBtn.onclick = someEvent;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener add</title>
+</head>
+<body>
+    <button id="btn">Change Bg</button>
+    <script>
+        
+        // function someEvent(){
+        //     document.body.style.backgroundColor = "red";
+        // };
+       document.getElementById("btn").addEventListener("click", function(){
+           document.body.style.backgroundColor = "blue"
+       })
+        // btn.addEventListener("click", someEvent);
+    </script>
+</body>
+</html>
